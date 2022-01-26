@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class distance_vers_mur : MonoBehaviour
+public class deplacement_perso : MonoBehaviour
 {
     [SerializeField] private float yawn = 0f;
     [SerializeField] private float pitch = 0f;
@@ -29,6 +29,4 @@ public class distance_vers_mur : MonoBehaviour
         
         transform.eulerAngles = new Vector3(pitch, yawn, 0f); 
     }
-
-
 }

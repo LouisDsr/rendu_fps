@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 959697141}
   - component: {fileID: 959697142}
   - component: {fileID: 959697143}
+  - component: {fileID: 959697144}
   m_Layer: 7
   m_Name: player
   m_TagString: Untagged
@@ -800,6 +801,21 @@ MonoBehaviour:
   projectile: {fileID: -6828825958997207629, guid: c95ac43ccdcac384c8cb5141f8fa3721, type: 3}
   speed: 100
   bullet_holder: {fileID: 4659674}
+--- !u!114 &959697144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959697136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166d5f5ce254495ca83605f037a4360c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yawn: 0
+  pitch: 0
+  playerSpeed: 25
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,7 +1239,7 @@ GameObject:
   - component: {fileID: 1792464979}
   - component: {fileID: 1792464978}
   - component: {fileID: 1792464977}
-  m_Layer: 3
+  m_Layer: 10
   m_Name: spawn_player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1276,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792464976}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 20, y: 20, z: 20}

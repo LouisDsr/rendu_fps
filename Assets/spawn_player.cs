@@ -13,16 +13,22 @@ public class spawn_player : MonoBehaviour
     [SerializeField] float timer = 5;
     [SerializeField] private bool canSpawn = false;
     [SerializeField] private Transform target_holder;
+    private bool wall_exist = true;
     
 
     private void OnTriggerExit(Collider other)
     {
         //Debug.Log("spawn");
-        foreach (Transform w in walls)
+        if (wall_exist)
         {
-            Destroy(w.gameObject);
+            foreach (Transform w in walls)
+            {
+                Destroy(w.gameObject);
+                wall_exist = false;
+            }
+            canSpawn = true;
         }
-        canSpawn = true;
+        
     }
     void Update()
     {
